@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.titulares {
+  font-size: 24px;
+  text-align: left;
+}
+
+.precios {
+  font-size: 18px;
+  margin: 3px;
+ 
+}
+
+p.precios {
+  display: inline-flex;
+  flex-grow: 0.25;
+  width: 77px;
+  position: relative;
+  bottom: 22px;
+  left: 4px;
+}
+
+.descuentos {
+  font-size: 16px;
+  margin: 3px;
+}
+
+p.descuentos {
+  display: inline-flex;
+  flex-grow: 0.70;
+  text-align: left;
+  position: relative;
+  bottom: 20px;
+  right: 24px;
+  
+}
+
+.descripciones {
+  font-size: 16px;
+  display: none;
+  margin: 3px;
+  color:rgb(100, 100, 100);
+  position: relative;
+  bottom: 22px;
+  left: 4px;
+}
+
+main{
+  background-color: #ebebeb;
+  max-width: 90%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  border: 15px; 
+}
+
+.contenedorimg {
+  font-size: 240px;
+  background-color: white;
+  height: 260px;
+  padding: 10px;
+}
+
+.contenedorimg img {
+  display: flex;
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+}
+
+.textosproductos {
+  margin-top: 1px;
+  margin-bottom: 2px;
+  text-align: left;
+  background-color: white;
+  border-top: 1px solid #ebebeb;
+  border: 15px;
+  padding: 10px;
+}
+
+.desc {
+  color: #39b54a;
+  height: 26px;
+}
+
+body {
+  margin: auto;
+  text-align: center;
+  font-family: 'Roboto';
+  background-color: #ebebeb
+}
+
+/*La posicion se cambio de absoluta a relativa y la ubicacion (right y top) se cambiaron a los valores de 0*/
+
+main section article i{
+ font-size: 16px;
+ padding: 5px;
+ width: 20px;
+ height: 20px;
+ border: 1px solid #39b54a;
+ background-color: #FFF;
+ border-radius: 50%;
+ position: relative;
+ left: 275px;
+ top: -25px;
+}
+
+*.mionca{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ }
+
+.mionca {
+  color: #39b54a;
+  display: inline-block ;
+}
+
+.banner {
+  margin:0px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width: 35vh;
+}
+
+/*tablet*/
+
+@media (min-width: 361px) {
+  .descripciones {
+    display: inline;
+  }
+  .menuizq {
+    display: inline;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: inline-block;
+    width: 45%;
+    box-sizing: border-box;
+  }
+  .palflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+/*Desktop*/
+
+@media (min-width:769px) {
+  .descripciones {
+    display: inline;
+  }
+  .menuizq {
+    display: inline;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: inline-block;
+    width: 22%;
+    box-sizing: border-box;
+  }
+  .palflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
